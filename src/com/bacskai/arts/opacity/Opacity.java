@@ -57,6 +57,6 @@ public class Opacity {
 
         g.dispose();
 
-        ImageIO.write(img, "PNG", new File("opacity.png"));
+        ImageIO.write(img, "PNG", new File("res/opacity.png"));
     }
 }

@@ -17,7 +17,7 @@ public class Text {
         int blackRGB = Color.white.getRGB();
 
 		int w = 1920;
-        BufferedImage templ = ImageIO.read(new File("potty.png"));
+        BufferedImage templ = ImageIO.read(new File("res/potty.png"));
         float scale = (float) w / templ.getWidth();
         int h = (int) (templ.getHeight() * scale);
 		
@@ -52,7 +52,7 @@ public class Text {
             }
         }
 
-        ImageIO.write(img, "PNG", new File("text.png"));
+        ImageIO.write(img, "PNG", new File("res/text.png"));
         System.err.print("Done with seed ");
         System.err.println(seed);
     }
